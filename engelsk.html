@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Martins Logbog</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css"></link>
+    </head>
+    <body>
+        <!-- Navigation bar HTML -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html">Kaj Børge</a>
+            <a href="informatik.html">INF</a>
+            <a href="matematik.html">MAT</a>
+            <a href="dansk.html">DAN</a>
+            <a href="engelsk.html" class="active">Projekt</a>
+            <a href="flappybird-clone-main/beginnerversion/index.html">Ronnie</a>
+            <a href="fullstackdemo fugl data/fullstackdemo-master/fugl/flappybird-clone-main/beginnerversion/index.html">Highscore</a>
+        
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+              <i class="fa fa-bars"></i>
+            </a>
+        </div>
+
+        <!-- Accordion HTML -->
+        <div class="content" id="engelsk">
+            <div class="element left">
+                <h2>Projekt servere/databaser</h2>
+                <button class="accordion"><strong>3-lags arkitektur</strong></button>
+                <div class="panel">
+                <p>
+                    <img src="images/3lags.png" alt="3-lags">
+                3-lags arkitektur bruges til at holde overblikket over hvordan kommunikationen mellem mellem bruger, webserver og databaseserveren.
+            <br>
+            <br>
+            •	Præsentationslag: Det øverste lag der håndterer modtagelse og præsentation af data. Dette lag er kendetegnet ved at være ”tæt” på brugeren af programmet.
+            <br>
+            <br>
+•	Logiklag: Det midterste lag der håndterer udvekslingen af data mellem præsentationslaget og datalaget.
+<br>
+<br>
+•	Datalag: Det nederste lag der opbevarer og håndterer data. Dette lag er også kendetegnet ved at være ”tæt” på computeren.
+
+        </p>
+                </div>
+
+                <button class="accordion"><strong>ERD-diagrammer</strong></button>
+                <div class="panel">
+                <p> <img src="images/erd.jpg" alt="3-lags">
+                   <br> Entity relationship diagrams ERD-diagrammer er en visuel beskrivelse af indbyrdes relationer i et IT-system. De er gode til at skabe et overblik over et projekt. overstående billede er et eksempel.</p>
+                </div>
+
+                <button class="accordion"><strong>Idé</strong></button>
+                <div class="panel">
+                <p>Vi ville gerne lave en funktion der kunne gemme highscores i flabbybird spillet under et bestemt navn i databasen.
+                    <br>
+                    <br>For at tilgå dataene i databasen skal man bruge f.eks. mongoDB. Serveren skal også startes.
+                    <br>
+                    <br>Vi startede inde i "app" javascriptfilen med at lave en ny funktion "inserthighscore directly" som var en funktion der indsatte highscoren direkte fra det givne brugernavn i databasen istedet for den tidligere funktion "inserthighsocre" hvor man skulle skrive brugernavn i en promt og derefter highscore. Funktionen blev brugt på restartkey. (Se billede under)
+                    <br><p> <img src="images/insert.PNG" alt="3-lags">
+                    <br>
+                    <br>Derefter brugte vi en promt på startkey så man kunne angive sit username når spillet startede som bliver husket til highscoren skal indsættes i databasen. (se billede under)
+                    <br>
+                    <br><p> <img src="images/username.PNG" alt="3-lags">
+                    <br>
+                    <br>Med disse ændringer til spillet kan man gemme sine scores i databasen under det username man angiver i starten. Projektet ligger på navigationsbaren "Highscore"
+                
+                </div>
+            </div>
+
+            <div class="element left">
+                <h2>SO2 Projekt</h2>
+                <button class="accordion"><strong>Idé</strong></button>
+                <div class="panel">
+<p></p>Vi skulle udvikle en hjemmeside som kunne formidle Biologi C til 1.G elever.
+                </div>
+
+                <button class="accordion"><strong>Her er linket til hjemmesiden hvis den stadig er oppe</strong></button>
+                <div class="panel">
+                <a href="https://laur598c.wixsite.com/my-site-1">Biologi C</a>
+                
+                </div>
+
+            
+
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
